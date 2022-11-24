@@ -1,6 +1,7 @@
 const axios = require('axios')
+const GeneralEnviorment = require('../../Entities/GeneralEnviorment')
 
-const urlEndPoint = 'http://209.105.239.29:9797/ApiConcatena/Concatenar/Concatena'
+const urlEndPoint = GeneralEnviorment.urlEndPoint
 
 const getJoinWords = async (firstName, lastName, secondLastName) => {
     let reqObject = {
