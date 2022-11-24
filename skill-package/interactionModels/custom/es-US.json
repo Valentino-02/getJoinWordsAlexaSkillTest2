@@ -1,0 +1,60 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "nombre completo",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNombreCompletoIntent",
+          "slots": [
+            {
+              "name": "firstName",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "lastName",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "secondLastName",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "mi segundo apellido es {secondLastName}",
+            "mi apellido es {lastName}",
+            "mi primer nombre es {firstName}",
+            "mi nombre es {firstName}"
+          ]
+        },
+        {
+          "name": "UseServiceIntent",
+          "slots": [],
+          "samples": [
+            "realiza el pedido",
+            "haz el pedido",
+            "realiza el llamado",
+            "haz el llamado"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "9"
+}
